@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.test.ChallengeDirections
+import com.example.test.Fragment.ChallengeDirections
 import com.example.test.R
 import com.example.test.databinding.FragmentChallengeBinding
 
@@ -26,7 +26,7 @@ class Challenge : Fragment() {
                 R.layout.fragment_challenge,container,false)
 
         binding.LearnPinYin.setOnClickListener { view : View -> view.findNavController().navigate(ChallengeDirections.actionChallengeToDifficulty()) }
-        binding.LearnCS.setOnClickListener { view : View -> view.findNavController().navigate(ChallengeDirections.actionChallengeToDifficulty()) }
+        binding.LearnCS.setOnClickListener { view : View -> view.findNavController().navigate(ChallengeDirections.actionChallengeToDifficulty2()) }
 
         return binding.root
     }

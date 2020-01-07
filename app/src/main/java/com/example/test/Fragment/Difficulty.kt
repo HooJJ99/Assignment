@@ -24,10 +24,10 @@ class Difficulty : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentDifficultyBinding>(inflater,
                 R.layout.fragment_difficulty,container,false)
 
-        binding.Easy.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToQuestions()) }
+        binding.Easy.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToEZPYQ()) }
         binding.Normal.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToQuestions()) }
-        binding.Hard.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToQuestions()) }
-        binding.Extreme.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToQuestions()) }
+        binding.Hard.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToHDPYQ()) }
+        binding.Extreme.setOnClickListener { view : View -> view.findNavController().navigate(DifficultyDirections.actionDifficultyToEXPYQ()) }
 
 
         return binding.root

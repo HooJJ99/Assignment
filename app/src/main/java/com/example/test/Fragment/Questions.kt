@@ -9,8 +9,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.test.QuestionsArgs
-import com.example.test.QuestionsDirections
+import com.example.test.Fragment.QuestionsDirections
 import com.example.test.R
 import com.example.test.databinding.FragmentQuestionsBinding
 

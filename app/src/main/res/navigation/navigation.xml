@@ -33,6 +33,15 @@
         <action
             android:id="@+id/action_difficulty_to_questions"
             app:destination="@id/questions" />
+        <action
+            android:id="@+id/action_difficulty_to_EXPYQ"
+            app:destination="@id/EXPYQ" />
+        <action
+            android:id="@+id/action_difficulty_to_EZPYQ"
+            app:destination="@id/EZPYQ" />
+        <action
+            android:id="@+id/action_difficulty_to_HDPYQ"
+            app:destination="@id/HDPYQ" />
 
     </fragment>
     <fragment
@@ -63,5 +72,82 @@
     <fragment
         android:id="@+id/difficulty2"
         android:name="com.example.test.Fragment.Difficulty2"
-        android:label="Difficulty2" />
+        android:label="Difficulty2"
+        tools:layout="@layout/fragment_difficulty2">
+        <action
+            android:id="@+id/action_difficulty2_to_EZCSQ"
+            app:destination="@id/EZCSQ" />
+        <action
+            android:id="@+id/action_difficulty2_to_HDCSQ"
+            app:destination="@id/HDCSQ" />
+        <action
+            android:id="@+id/action_difficulty2_to_EXCSQ"
+            app:destination="@id/EXCSQ" />
+        <action
+            android:id="@+id/action_difficulty2_to_NMCSQ"
+            app:destination="@id/NMCSQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/EZCSQ"
+        android:name="com.example.test.Fragment.EZCSQ"
+        android:label="EZCSQ"
+        tools:layout="@layout/fragment_ezcsq">
+        <action
+            android:id="@+id/action_EZCSQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/EXPYQ"
+        android:name="com.example.test.Fragment.EXPYQ"
+        android:label="EXPYQ"
+        tools:layout="@layout/fragment_expyq">
+        <action
+            android:id="@+id/action_EXPYQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/EZPYQ"
+        android:name="com.example.test.Fragment.EZPYQ"
+        android:label="EZPYQ"
+        tools:layout="@layout/fragment_ezpyq">
+        <action
+            android:id="@+id/action_EZPYQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/HDPYQ"
+        android:name="com.example.test.Fragment.HDPYQ"
+        android:label="HDPYQ"
+        tools:layout="@layout/fragment_hdpyq">
+        <action
+            android:id="@+id/action_HDPYQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/HDCSQ"
+        android:name="com.example.test.Fragment.HDCSQ"
+        android:label="HDCSQ"
+        tools:layout="@layout/fragment_hdcsq">
+        <action
+            android:id="@+id/action_HDCSQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/EXCSQ"
+        android:name="com.example.test.Fragment.EXCSQ"
+        android:label="fragment_excsq"
+        tools:layout="@layout/fragment_excsq" >
+        <action
+            android:id="@+id/action_EXCSQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/NMCSQ"
+        android:name="com.example.test.Fragment.NMCSQ"
+        android:label="fragment_nmcsq"
+        tools:layout="@layout/fragment_nmcsq" >
+        <action
+            android:id="@+id/action_NMCSQ_to_result"
+            app:destination="@id/result" />
+    </fragment>
 </navigation>
