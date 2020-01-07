@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/start">
+    <fragment
+        android:id="@+id/start"
+        android:name="com.example.test.Start"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start_to_challenge"
+            app:destination="@id/challenge" />
+    </fragment>
+    <fragment
+        android:id="@+id/challenge"
+        android:name="com.example.test.Challenge"
+        android:label="fragment_challenges"
+        tools:layout="@layout/fragment_challenge">
+        <action
+            android:id="@+id/action_challenge_to_difficulty"
+            app:destination="@id/difficulty" />
+    </fragment>
+    <fragment
+        android:id="@+id/difficulty"
+        android:name="com.example.test.Difficulty"
+        android:label="fragment_difficulty"
+        tools:layout="@layout/fragment_difficulty">
+        <action
+            android:id="@+id/action_difficulty_to_questions"
+            app:destination="@id/questions" />
+    </fragment>
+    <fragment
+        android:id="@+id/questions"
+        android:name="com.example.test.Questions"
+        android:label="fragment_questions"
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/action_questions_to_result"
+            app:destination="@id/result" />
+    </fragment>
+    <fragment
+        android:id="@+id/result"
+        android:name="com.example.test.Result"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="numCorrect"
+            app:argType="integer" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_result_to_challenge"
+            app:destination="@id/challenge" />
+    </fragment>
+</navigation>
