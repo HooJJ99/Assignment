@@ -6,7 +6,7 @@
     app:startDestination="@id/start">
     <fragment
         android:id="@+id/start"
-        android:name="com.example.test.Start"
+        android:name="com.example.test.Fragment.Start"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -15,34 +15,39 @@
     </fragment>
     <fragment
         android:id="@+id/challenge"
-        android:name="com.example.test.Challenge"
+        android:name="com.example.test.Fragment.Challenge"
         android:label="fragment_challenges"
         tools:layout="@layout/fragment_challenge">
         <action
             android:id="@+id/action_challenge_to_difficulty"
             app:destination="@id/difficulty" />
+        <action
+            android:id="@+id/action_challenge_to_difficulty2"
+            app:destination="@id/difficulty2" />
     </fragment>
     <fragment
         android:id="@+id/difficulty"
-        android:name="com.example.test.Difficulty"
+        android:name="com.example.test.Fragment.Difficulty"
         android:label="fragment_difficulty"
         tools:layout="@layout/fragment_difficulty">
         <action
             android:id="@+id/action_difficulty_to_questions"
             app:destination="@id/questions" />
+
     </fragment>
     <fragment
         android:id="@+id/questions"
-        android:name="com.example.test.Questions"
+        android:name="com.example.test.Fragment.Questions"
         android:label="fragment_questions"
         tools:layout="@layout/fragment_questions">
         <action
             android:id="@+id/action_questions_to_result"
             app:destination="@id/result" />
+
     </fragment>
     <fragment
         android:id="@+id/result"
-        android:name="com.example.test.Result"
+        android:name="com.example.test.Fragment.Result"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <argument
@@ -55,4 +60,8 @@
             android:id="@+id/action_result_to_challenge"
             app:destination="@id/challenge" />
     </fragment>
+    <fragment
+        android:id="@+id/difficulty2"
+        android:name="com.example.test.Fragment.Difficulty2"
+        android:label="Difficulty2" />
 </navigation>

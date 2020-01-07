@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.Fragment
 
 
 import android.os.Bundle
@@ -9,6 +9,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.test.QuestionsArgs
+import com.example.test.QuestionsDirections
+import com.example.test.R
 import com.example.test.databinding.FragmentQuestionsBinding
 
 
@@ -22,27 +25,28 @@ class Questions : Fragment() {
         val text: String,
         val answers: List<String>)
 
+
     private val questions: MutableList<EasyQuest> = mutableListOf(
-        EasyQuest(text = "我",
-            answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
-        EasyQuest(text = "我",
-            answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-        EasyQuest(text = "我",
-            answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-        EasyQuest(text = "我",
-            answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
-        EasyQuest(text = "我",
-            answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
-        EasyQuest(text = "我",
-            answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-        EasyQuest(text = "我",
-            answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-        EasyQuest(text = "我",
-            answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-        EasyQuest(text = "我",
-            answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-        EasyQuest(text = "我",
-            answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            EasyQuest(text = "我",
+                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
+            EasyQuest(text = "我",
+                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
+            EasyQuest(text = "我",
+                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
+            EasyQuest(text = "我",
+                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
+            EasyQuest(text = "我",
+                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
+            EasyQuest(text = "我",
+                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
+            EasyQuest(text = "我",
+                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
+            EasyQuest(text = "我",
+                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
+            EasyQuest(text = "我",
+                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
+            EasyQuest(text = "我",
+                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
     )
 
     lateinit var currentQuestion: EasyQuest
@@ -54,7 +58,7 @@ class Questions : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentQuestionsBinding>(inflater,
-            R.layout.fragment_questions,container,false)
+                R.layout.fragment_questions,container,false)
 
         randomizeQuestions()
         binding.game = this
@@ -78,8 +82,7 @@ class Questions : Fragment() {
 
 
                         view.findNavController()
-                                .navigate(QuestionsDirections
-                                        .actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
                     }
                 }else{
                     questionIndex++
@@ -94,6 +97,7 @@ class Questions : Fragment() {
                 }
             }
         }
+
         return binding.root
     }
     private fun randomizeQuestions() {

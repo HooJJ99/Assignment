@@ -13,13 +13,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="256" />
-                            <option name="y" value="12" />
+                            <option name="x" value="233" />
+                            <option name="y" value="253" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_challenge_to_difficulty">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_challenge_to_difficulty2">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -34,8 +39,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="491" />
-                            <option name="y" value="10" />
+                            <option name="x" value="376" />
+                            <option name="y" value="582" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -50,13 +55,25 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="difficulty2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="296" />
+                            <option name="y" value="-124" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="questions">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="744" />
-                            <option name="y" value="12" />
+                            <option name="x" value="688" />
+                            <option name="y" value="396" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -76,9 +93,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="988" />
-                            <option name="y" value="12" />
+                            <option name="x" value="911" />
+                            <option name="y" value="235" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_result_to_challenge">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -89,7 +115,7 @@
                         <option name="myPosition">
                           <Point>
                             <option name="x" value="12" />
-                            <option name="y" value="12" />
+                            <option name="y" value="241" />
                           </Point>
                         </option>
                         <option name="myPositions">

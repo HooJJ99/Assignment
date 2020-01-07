@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.Fragment
 
 
 import android.os.Bundle
@@ -8,6 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import com.example.test.R
+import com.example.test.ResultArgs
+import com.example.test.ResultDirections
 import com.example.test.databinding.FragmentResultBinding
 
 

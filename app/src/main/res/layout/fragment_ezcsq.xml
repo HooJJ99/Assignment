@@ -8,7 +8,7 @@
 
         <variable
             name="game"
-            type="com.example.test.Fragment.Questions" />
+            type="com.example.test.Fragment.EZCSQ" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleConstraint"
