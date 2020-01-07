@@ -2,13 +2,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Fragment.HDCSQ"
+    tools:context=".question.HDCSQ"
     >
     <data>
 
         <variable
             name="game"
-            type="com.example.test.Fragment.HDCSQ" />
+            type="com.example.test.question.HDCSQ" />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/titleConstraint"

@@ -1,4 +1,4 @@
-package com.example.test.Fragment
+package com.example.test.question
 
 
 import android.os.Bundle
@@ -9,22 +9,19 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-
 import com.example.test.R
-import com.example.test.databinding.FragmentEzcsqBinding
-import com.example.test.databinding.FragmentHdcsqBinding
 import com.example.test.databinding.FragmentQuestionsBinding
 
 
 /**
  * A simple [Fragment] subclass.
  */
-class HDCSQ : Fragment() {
+class Questions : Fragment() {
 
     var correctIndex=0
     data class EasyQuest(
-            val text: String,
-            val answers: List<String>)
+        val text: String,
+        val answers: List<String>)
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
@@ -55,11 +52,11 @@ class HDCSQ : Fragment() {
     private var questionIndex = 0
     private val numQuestions = Math.min((questions.size + 1) / 2, 5)
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentHdcsqBinding>(inflater,
-                R.layout.fragment_hdcsq,container,false)
+        val binding = DataBindingUtil.inflate<FragmentQuestionsBinding>(inflater,
+                R.layout.fragment_questions,container,false)
 
         randomizeQuestions()
         binding.game = this

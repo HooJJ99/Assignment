@@ -1,4 +1,4 @@
-package com.example.test.Fragment
+package com.example.test.question
 
 
 import android.os.Bundle
@@ -9,17 +9,15 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-
 import com.example.test.R
 import com.example.test.databinding.FragmentEzcsqBinding
-import com.example.test.databinding.FragmentNmcsqBinding
-import com.example.test.databinding.FragmentQuestionsBinding
+
 
 
 /**
  * A simple [Fragment] subclass.
  */
-class NMCSQ : Fragment() {
+class EZCSQ : Fragment() {
 
     var correctIndex=0
     data class EasyQuest(
@@ -58,8 +56,8 @@ class NMCSQ : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentNmcsqBinding>(inflater,
-                R.layout.fragment_nmcsq,container,false)
+        val binding = DataBindingUtil.inflate<FragmentEzcsqBinding>(inflater,
+                R.layout.fragment_ezcsq,container,false)
 
         randomizeQuestions()
         binding.game = this
@@ -83,7 +81,7 @@ class NMCSQ : Fragment() {
 
 
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EZCSQDirections.actionEZCSQToResult(numQuestions, correctIndex))
                     }
                 }else{
                     questionIndex++
@@ -93,7 +91,7 @@ class NMCSQ : Fragment() {
                         binding.invalidateAll()
                     }else{
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EZCSQDirections.actionEZCSQToResult(numQuestions, correctIndex))
                     }
                 }
             }

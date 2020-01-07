@@ -1,4 +1,4 @@
-package com.example.test.Fragment
+package com.example.test.question
 
 
 import android.os.Bundle
@@ -11,15 +11,13 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 
 import com.example.test.R
-import com.example.test.databinding.FragmentEzcsqBinding
-import com.example.test.databinding.FragmentHdpyqBinding
-import com.example.test.databinding.FragmentQuestionsBinding
+import com.example.test.databinding.FragmentExcsqBinding
 
 
 /**
  * A simple [Fragment] subclass.
  */
-class HDPYQ : Fragment() {
+class EXCSQ : Fragment() {
 
     var correctIndex=0
     data class EasyQuest(
@@ -58,8 +56,8 @@ class HDPYQ : Fragment() {
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentHdpyqBinding>(inflater,
-                R.layout.fragment_hdpyq,container,false)
+        val binding = DataBindingUtil.inflate<FragmentExcsqBinding>(inflater,
+                R.layout.fragment_excsq,container,false)
 
         randomizeQuestions()
         binding.game = this
@@ -83,7 +81,7 @@ class HDPYQ : Fragment() {
 
 
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EXCSQDirections.actionEXCSQToResult(numQuestions, correctIndex))
                     }
                 }else{
                     questionIndex++
@@ -93,7 +91,7 @@ class HDPYQ : Fragment() {
                         binding.invalidateAll()
                     }else{
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EXCSQDirections.actionEXCSQToResult(numQuestions, correctIndex))
                     }
                 }
             }

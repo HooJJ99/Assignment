@@ -1,4 +1,4 @@
-package com.example.test.Fragment
+package com.example.test.question
 
 
 import android.os.Bundle
@@ -8,11 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.test.Fragment.Difficulty2Directions
 import com.example.test.R
 import com.example.test.databinding.FragmentDifficulty2Binding
-import com.example.test.databinding.FragmentDifficultyBinding
-import kotlinx.android.synthetic.main.fragment_difficulty.*
 
 /**
  * A simple [Fragment] subclass.

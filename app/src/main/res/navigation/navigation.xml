@@ -6,7 +6,7 @@
     app:startDestination="@id/start">
     <fragment
         android:id="@+id/start"
-        android:name="com.example.test.Fragment.Start"
+        android:name="com.example.test.question.Start"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/challenge"
-        android:name="com.example.test.Fragment.Challenge"
+        android:name="com.example.test.question.Challenge"
         android:label="fragment_challenges"
         tools:layout="@layout/fragment_challenge">
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/difficulty"
-        android:name="com.example.test.Fragment.Difficulty"
+        android:name="com.example.test.question.Difficulty"
         android:label="fragment_difficulty"
         tools:layout="@layout/fragment_difficulty">
         <action
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/questions"
-        android:name="com.example.test.Fragment.Questions"
+        android:name="com.example.test.question.Questions"
         android:label="fragment_questions"
         tools:layout="@layout/fragment_questions">
         <action
@@ -56,7 +56,7 @@
     </fragment>
     <fragment
         android:id="@+id/result"
-        android:name="com.example.test.Fragment.Result"
+        android:name="com.example.test.question.Result"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
         <argument
@@ -71,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/difficulty2"
-        android:name="com.example.test.Fragment.Difficulty2"
+        android:name="com.example.test.question.Difficulty2"
         android:label="Difficulty2"
         tools:layout="@layout/fragment_difficulty2">
         <action
@@ -89,7 +89,7 @@
     </fragment>
     <fragment
         android:id="@+id/EZCSQ"
-        android:name="com.example.test.Fragment.EZCSQ"
+        android:name="com.example.test.question.EZCSQ"
         android:label="EZCSQ"
         tools:layout="@layout/fragment_ezcsq">
         <action
@@ -98,7 +98,7 @@
     </fragment>
     <fragment
         android:id="@+id/EXPYQ"
-        android:name="com.example.test.Fragment.EXPYQ"
+        android:name="com.example.test.question.EXPYQ"
         android:label="EXPYQ"
         tools:layout="@layout/fragment_expyq">
         <action
@@ -107,7 +107,7 @@
     </fragment>
     <fragment
         android:id="@+id/EZPYQ"
-        android:name="com.example.test.Fragment.EZPYQ"
+        android:name="com.example.test.question.EZPYQ"
         android:label="EZPYQ"
         tools:layout="@layout/fragment_ezpyq">
         <action
@@ -116,7 +116,7 @@
     </fragment>
     <fragment
         android:id="@+id/HDPYQ"
-        android:name="com.example.test.Fragment.HDPYQ"
+        android:name="com.example.test.question.HDPYQ"
         android:label="HDPYQ"
         tools:layout="@layout/fragment_hdpyq">
         <action
@@ -125,7 +125,7 @@
     </fragment>
     <fragment
         android:id="@+id/HDCSQ"
-        android:name="com.example.test.Fragment.HDCSQ"
+        android:name="com.example.test.question.HDCSQ"
         android:label="HDCSQ"
         tools:layout="@layout/fragment_hdcsq">
         <action
@@ -134,18 +134,18 @@
     </fragment>
     <fragment
         android:id="@+id/EXCSQ"
-        android:name="com.example.test.Fragment.EXCSQ"
+        android:name="com.example.test.question.EXCSQ"
         android:label="fragment_excsq"
-        tools:layout="@layout/fragment_excsq" >
+        tools:layout="@layout/fragment_excsq">
         <action
             android:id="@+id/action_EXCSQ_to_result"
             app:destination="@id/result" />
     </fragment>
     <fragment
         android:id="@+id/NMCSQ"
-        android:name="com.example.test.Fragment.NMCSQ"
+        android:name="com.example.test.question.NMCSQ"
         android:label="fragment_nmcsq"
-        tools:layout="@layout/fragment_nmcsq" >
+        tools:layout="@layout/fragment_nmcsq">
         <action
             android:id="@+id/action_NMCSQ_to_result"
             app:destination="@id/result" />

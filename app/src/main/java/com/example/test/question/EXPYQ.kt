@@ -1,4 +1,4 @@
-package com.example.test.Fragment
+package com.example.test.question
 
 
 import android.os.Bundle
@@ -9,20 +9,20 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.test.Fragment.QuestionsDirections
 import com.example.test.R
-import com.example.test.databinding.FragmentQuestionsBinding
+import com.example.test.databinding.FragmentExpyqBinding
+
 
 
 /**
  * A simple [Fragment] subclass.
  */
-class Questions : Fragment() {
+class EXPYQ : Fragment() {
 
     var correctIndex=0
     data class EasyQuest(
-        val text: String,
-        val answers: List<String>)
+            val text: String,
+            val answers: List<String>)
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
@@ -53,11 +53,11 @@ class Questions : Fragment() {
     private var questionIndex = 0
     private val numQuestions = Math.min((questions.size + 1) / 2, 5)
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentQuestionsBinding>(inflater,
-                R.layout.fragment_questions,container,false)
+        val binding = DataBindingUtil.inflate<FragmentExpyqBinding>(inflater,
+                R.layout.fragment_expyq,container,false)
 
         randomizeQuestions()
         binding.game = this
@@ -81,7 +81,7 @@ class Questions : Fragment() {
 
 
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EXPYQDirections.actionEXPYQToResult(numQuestions, correctIndex))
                     }
                 }else{
                     questionIndex++
@@ -91,7 +91,7 @@ class Questions : Fragment() {
                         binding.invalidateAll()
                     }else{
                         view.findNavController()
-                                .navigate(QuestionsDirections.actionQuestionsToResult(numQuestions, correctIndex))
+                                .navigate(EXPYQDirections.actionEXPYQToResult(numQuestions, correctIndex))
                     }
                 }
             }
