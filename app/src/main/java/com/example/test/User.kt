@@ -4,3 +4,7 @@ class User (
     val username: String?
 
 )
+{
+    constructor(): this("")
+
+}

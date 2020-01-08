@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
@@ -85,6 +87,12 @@ class EZPYQ : Fragment() {
                     }
                 }else{
                     questionIndex++
+                    val builder = AlertDialog.Builder(this.requireContext())
+                    builder.setTitle("Sorry Wrong Answer !!!")
+                    builder.setMessage("Answer : ${currentQuestion.answers[0]}")
+                    builder.setNeutralButton("OK"){_,_ -> Toast.makeText(this.context,"Better Luck Next Time.", Toast.LENGTH_SHORT).show()}
+                    val dialog: AlertDialog = builder.create()
+                    dialog.show()
                     if (questionIndex < numQuestions) {
                         currentQuestion = questions[questionIndex]
                         setQuestion()
