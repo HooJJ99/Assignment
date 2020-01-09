@@ -28,26 +28,26 @@ class EZCSQ : Fragment() {
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
-            EasyQuest(text = "我",
-                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
-            EasyQuest(text = "我",
-                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-            EasyQuest(text = "我",
-                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-            EasyQuest(text = "我",
-                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
-            EasyQuest(text = "我",
-                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
-            EasyQuest(text = "我",
-                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-            EasyQuest(text = "我",
-                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-            EasyQuest(text = "我",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            EasyQuest(text = "我___一起看月亮。",
+                    answers = listOf("们", "门", "扪", "钔")),
+            EasyQuest(text = "我___你谁跑的最快。",
+                    answers = listOf("和", "合", "何", "河")),
+            EasyQuest(text = "谁都别___跑。",
+                    answers = listOf("想", "向", "像", "现")),
+            EasyQuest(text = "小妹___了个玩具回家。",
+                    answers = listOf("买", "卖", "麦", "迈")),
+            EasyQuest(text = "我的朋友___小心打碎了学校的花盆。",
+                    answers = listOf("不", "补", "步", "部")),
+            EasyQuest(text = "那女孩___我说，说我是一个小偷。",
+                    answers = listOf("对", "队", "堆", "怼")),
+            EasyQuest(text = "我飘向北方，___问我家乡。",
+                    answers = listOf("别", "憋", "鳖", "瘪")),
+            EasyQuest(text = "你___择去崇拜谁呢怨恨谁呢。",
+                    answers = listOf("选", "轩", "宣", "萱")),
+            EasyQuest(text = "這麼___年的兄弟 有誰我更了解你",
+                    answers = listOf("多", "躲", "夺", "朵")),
+            EasyQuest(text = "回到___二年前 回憶就在眼前",
+                    answers = listOf("十", "是", "事", "时"))
     )
 
     lateinit var currentQuestion: EasyQuest

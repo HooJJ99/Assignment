@@ -28,26 +28,26 @@ class NMCSQ : Fragment() {
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
-            EasyQuest(text = "我",
-                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
-            EasyQuest(text = "我",
-                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-            EasyQuest(text = "我",
-                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-            EasyQuest(text = "我",
-                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
-            EasyQuest(text = "我",
-                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
-            EasyQuest(text = "我",
-                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-            EasyQuest(text = "我",
-                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-            EasyQuest(text = "我",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            EasyQuest(text = "新___快乐，老师。",
+                    answers = listOf("年", "念", "粘", "黏")),
+            EasyQuest(text = "你就是传说来的天___的魔鬼。",
+                    answers = listOf("堂", "唐", "糖", "躺")),
+            EasyQuest(text = "踏上战场的那天就要勇___直前。",
+                    answers = listOf("往", "王", "网", "汪")),
+            EasyQuest(text = "在一瞬___ 有一百万个可能。",
+                    answers = listOf("间", "见", "建", "件")),
+            EasyQuest(text = "这冬夜里 有百万个不确___。",
+                    answers = listOf("定", "顶", "订", "丁")),
+            EasyQuest(text = "在咫尺的未來生___就像茫茫海上一隻小船勇敢乘風破浪。",
+                    answers = listOf("活", "火", "或", "货")),
+            EasyQuest(text = "白天和晚上都是冬___。",
+                    answers = listOf("夜", "也", "页", "叶")),
+            EasyQuest(text = "新鲜的水果不断地从国外送进农贸___场。",
+                    answers = listOf("市", "是", "事", "实")),
+            EasyQuest(text = "這麼年年的兄弟 有誰我更了___你",
+                    answers = listOf("解", "姐", "接", "街")),
+            EasyQuest(text = "回到十二年前 回___就在眼前",
+                    answers = listOf("忆", "一", "已", "以"))
     )
 
     lateinit var currentQuestion: EasyQuest

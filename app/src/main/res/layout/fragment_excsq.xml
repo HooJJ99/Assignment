@@ -24,13 +24,13 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@{game.currentQuestion.text}"
-            android:textSize="100dp"
+            android:textSize="50dp"
             android:textStyle="bold"
             android:background="#fff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="我"/>
+            tools:text="我们要去———健身吗？"/>
 
         <RadioGroup
             android:id="@+id/questionRadioGroup"

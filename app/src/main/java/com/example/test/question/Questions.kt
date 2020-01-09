@@ -27,26 +27,26 @@ class Questions : Fragment() {
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
-            EasyQuest(text = "我",
-                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
-            EasyQuest(text = "我",
-                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-            EasyQuest(text = "我",
-                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-            EasyQuest(text = "我",
-                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
-            EasyQuest(text = "我",
-                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
-            EasyQuest(text = "我",
-                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-            EasyQuest(text = "我",
-                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-            EasyQuest(text = "我",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            EasyQuest(text = "卧",
+                    answers = listOf( "wò", "wō","wǒ", "wó")),
+            EasyQuest(text = "拟",
+                    answers = listOf("nǐ", "nī", "ní", "nì")),
+            EasyQuest(text = "它",
+                    answers = listOf("tā", "tǎ", "tà", "tá")),
+            EasyQuest(text = "得",
+                    answers = listOf("dé", "dē", "ddè", "dě")),
+            EasyQuest(text = "达",
+                    answers = listOf("dá", "dǎ","dà", "dā")),
+            EasyQuest(text = "新",
+                    answers = listOf("xīn", "xìn", "xǐn", "xín")),
+            EasyQuest(text = "事",
+                    answers = listOf("shì", "shí", "shǐ", "shī")),
+            EasyQuest(text = "闷",
+                    answers = listOf("mēn", "měn", "mèn","mén")),
+            EasyQuest(text = "夏",
+                    answers = listOf("xià", "xiá", "xiā", "xiǎ")),
+            EasyQuest(text = "潇",
+                    answers = listOf("xiāo", "xiǎo", "xiào", "xiáo"))
     )
 
     lateinit var currentQuestion: EasyQuest

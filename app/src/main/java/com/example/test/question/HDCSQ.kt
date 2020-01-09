@@ -28,26 +28,26 @@ class HDCSQ : Fragment() {
 
 
     private val questions: MutableList<EasyQuest> = mutableListOf(
-            EasyQuest(text = "我",
-                    answers = listOf("All of these", "Tools", "Documentation", "Libraries")),
-            EasyQuest(text = "我",
-                    answers = listOf("ViewGroup", "ViewSet", "ViewCollection", "ViewRoot")),
-            EasyQuest(text = "我",
-                    answers = listOf("ConstraintLayout", "GridLayout", "LinearLayout", "FrameLayout")),
-            EasyQuest(text = "我",
-                    answers = listOf("Data binding", "Data pushing", "Set text", "An OnClick method")),
-            EasyQuest(text = "我",
-                    answers = listOf("onCreateView()", "onActivityCreated()", "onCreateLayout()", "onInflateLayout()")),
-            EasyQuest(text = "我",
-                    answers = listOf("Gradle", "Graddle", "Grodle", "Groyle")),
-            EasyQuest(text = "我",
-                    answers = listOf("VectorDrawable", "AndroidVectorDrawable", "DrawableVector", "AndroidVector")),
-            EasyQuest(text = "我",
-                    answers = listOf("NavController", "NavCentral", "NavMaster", "NavSwitcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("intent-filter", "app-registry", "launcher-registry", "app-launcher")),
-            EasyQuest(text = "我",
-                    answers = listOf("<layout>", "<binding>", "<data-binding>", "<dbinding>"))
+            EasyQuest(text = "他孤苦伶仃，只有老鼠，蝙蝠和飞蛾与他相___。",
+                    answers = listOf("伴", "板", "版", "办")),
+            EasyQuest(text = "但是他欢天喜地地为自己辩解，简直像精___错乱了一样。",
+                    answers = listOf("神", "深", "沈", "身")),
+            EasyQuest(text = "商店___偿了顾客的经济损失,赢得了信誉。",
+                    answers = listOf("补", "部", "步", "布")),
+            EasyQuest(text = "武则天视太平如掌上明珠，对这个她唯一存___的女儿，她有着一种难以言表的补偿心理。",
+                    answers = listOf("活", "火", "货", "获")),
+            EasyQuest(text = "战___活活拆散了他一家八口。",
+                    answers = listOf("争", "真", "朕", "镇")),
+            EasyQuest(text = "他懊___当初没有听从大家的劝告。",
+                    answers = listOf("悔", "惠", "慧", "辉")),
+            EasyQuest(text = " 暮色___之中,远处的钓鱼城更增添了一层历史凝重感。",
+                    answers = listOf("苍茫", "藏满", "苍莽", "参忙")),
+            EasyQuest(text = "小王自以为是,还沾沾自喜,不知___的人,是从来不自以为了不起的。",
+                    answers = listOf("博学", "剥削", "勃学", "白雪")),
+            EasyQuest(text = "对待像狼一样的恶人，一定要给予严厉的___，决不能心慈手软。",
+                    answers = listOf("惩罚", "乘法", "成发", "城发")),
+            EasyQuest(text = "韩信忍住了一时的___，终成一代名将。",
+                    answers = listOf("耻辱", "赤露", "车路", "磁路"))
     )
 
     lateinit var currentQuestion: EasyQuest
